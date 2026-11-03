@@ -1,15 +1,35 @@
+
 from openpyxl import load_workbook
+
 
 wb = load_workbook("studentsinfo.xlsx")
 ws = wb.active
 
+
 ws["F1"] = "Total"
-ws
-ws["F2"] = "=SUM(B2:E2)"
-ws["F3"] = "=SUM(B3:E3)"
-ws["F4"] = "=SUM(B4:E4)"
-ws["F5"] = "=SUM(B5:E5)"
+ws["G1"] = "Average"
+ws["H1"] = "Result"
+
+
+for row in range(2, ws.max_row + 1):
+
+    
+    ws[f"F{row}"] = f"=SUM(B{row}:E{row})"
+
+    
+    ws[f"G{row}"] = f"=AVERAGE(B{row}:E{row})"
+
+    
+    ws[f"H{row}"] = f'=IF(G{row}>=40,"Pass","Fail")'
 
 wb.save("studentsinfo.xlsx")
-print("file save sucessfully")
+
+print("File saved successfully!")
+
+
+
+
+
+
+
 
