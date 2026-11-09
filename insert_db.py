@@ -42,4 +42,5 @@ cursor.executemany(qry, data);
 conn.commit();
 cursor.close;
 conn.close;
+
 print ("record insert sucessfully")
