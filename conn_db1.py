@@ -117,6 +117,8 @@ conn = pyodbc.connect(
 
 # cn = pyodbc.connect(conn)
 
+# print(pyodbc.drivers()):
+
 #initializing the cursor
 cursor = conn.cursor()
 
