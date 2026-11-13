@@ -44,3 +44,4 @@ cursor.close;
 conn.close;
 
 print ("record insert sucessfully")
+
