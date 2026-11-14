@@ -19,6 +19,7 @@ VALUES (?, ?, ?, ?)
 """
 data = list(df.itertuples(index=False, name=None))
 cursor.executemany(qry, data)
+
 conn.commit()
 cursor.close()
 conn.close()
