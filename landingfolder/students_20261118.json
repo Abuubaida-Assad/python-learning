@@ -1,0 +1,26 @@
+[
+    {
+        "idno": 1001,
+        "sname": "Anil",
+        "age": 32,
+        "course": "MCA",
+        "fees": 4000,
+        "joindate": "2026-11-04"
+    },
+    {
+        "idno": 1002,
+        "sname": "Arun",
+        "age": 30,
+        "course": "MCA",
+        "fees": 3500,
+        "joindate": "2026-11-05"
+    },
+    {
+        "idno": 1003,
+        "sname": "Ajay",
+        "age": 29,
+        "course": "MCA",
+        "fees": 3800,
+        "joindate": "2026-11-07"
+    }
+]
