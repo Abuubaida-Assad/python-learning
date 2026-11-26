@@ -131,6 +131,7 @@ for file in os.listdir(folder_path):
 
         file_path = os.path.join(folder_path, file)
 
+
         if file.endswith(".json"):
             df = pd.read_json(file_path)
 
